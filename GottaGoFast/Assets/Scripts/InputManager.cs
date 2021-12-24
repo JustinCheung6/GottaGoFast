@@ -22,6 +22,7 @@ public class InputManager : MonoBehaviour
         #region Activate InputEvents
 
         inSystem.GameInputs.Movement.Enable();
+        inSystem.GameInputs.MouseMovement.Enable();
         
         #endregion
     }

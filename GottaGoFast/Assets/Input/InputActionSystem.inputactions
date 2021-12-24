@@ -12,6 +12,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "MouseMovement",
+                    "type": "Value",
+                    "id": "7e09ea01-ff8b-4500-8b67-bff12b47b48c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -67,6 +75,61 @@
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "395b2cb0-bbb5-4c71-ba6e-c8927a1cfb8d",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseMovement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "af3165f1-c2bf-4635-a4e6-187448bcd289",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "Clamp(max=1000)",
+                    "groups": "",
+                    "action": "MouseMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "d9b99b52-50c9-4383-9b0c-396ea3a5b19c",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1000)",
+                    "groups": "",
+                    "action": "MouseMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "4a492bb6-4411-494f-845c-478326518ea5",
+                    "path": "<VirtualMouse>/delta/x",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1000)",
+                    "groups": "",
+                    "action": "MouseMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "95443224-b289-4976-a322-c4788226cc8c",
+                    "path": "<VirtualMouse>/delta/x",
+                    "interactions": "",
+                    "processors": "Clamp(max=1000)",
+                    "groups": "",
+                    "action": "MouseMovement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
